@@ -5,6 +5,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: "Poppins";
+  list-style: none;
 }
 
 :root {
@@ -38,11 +39,6 @@ body {
   z-index: 1000;
 }
 
-#menu-icon {
-  font-size: 3.5rem;
-  color: var(--main-color);
-  display: block;
-}
 
 .logo {
   font-size: 3rem;
@@ -57,9 +53,13 @@ body {
 }
 
 span {
-  background: linear-gradient(270deg, #038b8b 10%, #0dee85 80%);
+  background: linear-gradient(270deg, #575353 50%, #ee0d0d 80%);
   background-clip: text;
   color: transparent;
+}
+
+.navbar ul {
+  display: flex;
 }
 
 .navbar a {
@@ -76,15 +76,75 @@ span {
   border-bottom: 3px solid var(--main-color);
 }
 
+.header .menu {
+  display: none;
+  width: 60px;
+  height: 60px;
+  align-self: flex-end;
+}
+
+.header nav label {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .toggle {
+  background-color: #ffffff;
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.header .toggle:before,
+.header .toggle:after {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.2s ease-in-out;
+}
+
+.header .toggle:before {
+  top: -10px;
+}
+
+.header .toggle:after {
+  bottom: -10px;
+}
+
+.header input {
+  display: none;
+}
+
+.header input:checked~label .toggle {
+  transform: rotate(45deg);
+}
+
+.header input:checked~label .toggle:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.header input:checked~label .toggle:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
 .gradient-btn {
   font-size: 1.8rem;
   padding: 1rem 2rem;
   border-radius: 3rem;
-  background: linear-gradient(270deg, #038b8b 10%, #0dee85 80%);
+  background: linear-gradient(270deg, #000000 30%, #ee0d0d 80%);
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  color: black;
+  color: white;
   font-weight: 800;
   border: none;
   text-wrap: nowrap;
@@ -243,7 +303,7 @@ section {
 
 .skills-box:hover {
   background: black;
-  color: aqua;
+  color: var(--main-color);
   border: 5px solid black;
   transform: scale(1.03);
 }
@@ -320,12 +380,11 @@ section {
   border-radius: 2rem;
   padding: 1rem;
 }
+
 .projects-card video {
   height: auto;
   width: 100%;
   border-radius: 2em;
-  /* object-fit: contain; */
-  /* padding: 0 5rem; */
 }
 
 .projects .projects-card {
@@ -341,6 +400,7 @@ section {
 .info-project {
   display: none;
 }
+
 .projects-card:hover .info-project {
   display: flex;
   position: absolute;
@@ -356,46 +416,6 @@ section {
   z-index: 1;
 }
 
-/* .projects .projects-card h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  font-weight: 400;
-  color: white;
-  position: absolute;
-  opacity: 1;
-  width: 100%;
-  padding-left: 30px;
-  padding-top: 50px;
-  bottom: 0;
-} */
-
-.projects-card .overlay-text {
-  padding: 20px 20px;
-  color: var(--main-color);
-  background-color: var(--bg-color);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.overlay-text {
-  color: var(--main-color);
-  background-color: var(--bg-color);
-  position: absolute;
-  font-weight: 50px;
-  letter-spacing: 1px;
-  font-size: 1.5em;
-  top: 0;
-  left: 100%;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
 
 p {
   font-size: 2rem;
@@ -414,10 +434,8 @@ a {
   align-items: center;
   margin-top: 24px;
   padding: 10px 20px;
-
-  /* width: 50%; */
-  /* border: 1px solid blue; */
 }
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -464,7 +482,7 @@ a {
 
 /* --------------------------------------------------------------// Footer ------------------------------------------- */
 .footer {
-  background-color: var(--second-bg-color);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 50px 0;
 }
 
@@ -500,51 +518,44 @@ a {
 }
 
 /* --------------------------------------------------// Responsivo --------------------------------------------------------- */
+
 @media (max-width: 1024px) {
-  .navbar a {
-    display: none;
-  }
-  .home {
-    flex-direction: column-reverse;
-  }
-}
-@media (min-width: 1024px) {
-  #menu-icon {
-    display: none;
-  }
-  /* .navbar a {
+
+  .header .menu {
     display: block;
-  } */
-}
- /* @media (min-width: 1285px) {
- .navbar {
+  }
+
+  .header nav ul {
+    display: none;
+  }
+
+  .header input:checked~ul {
+    display: block;
+  }
+
+  .header nav {
     position: absolute;
-    top: 0%;
-    right: 0;
-    width: 50%;
-    padding: 1rem 3rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom-left-radius: 2rem;
-    border-left: 2px solid var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-    display: none;
+    top: 8px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  .header nav ul {
+    width: 200px;
+    background-color: #ee0d0d6c;
+    padding: 10px;
+    border-radius: 5%;
+  }
+
+  .header nav ul a {
+    text-align: center;
+    padding: 20px;
+    display: block;
   }
 
   .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-    color: var(--text-color);
+    margin-left: 0;
   }
-
-  .navbar.active {
-    display: block;
-  } 
-
-  .gradient-btn {
-    display: none;
-  }
-   
 
   .home {
     flex-direction: column-reverse;
@@ -552,27 +563,56 @@ a {
     gap: 5rem;
   }
 
+  .gradient-btn {
+    display: none;
+  }
+
+  .home img {
+    width: 56vw;
+  }
+
   .home-content {
-    align-items: center;
     text-align: center;
   }
 
-  .about {
-    flex-direction: column-reverse;
+  .heading {
     text-align: center;
+    font-size: 50px;
   }
 
-  .about h2 {
-    text-align: center;
-    margin: 2rem 0;
-  }
-
-  .home-img img {
-    width: 56vh;
+  .skill-info h3 {
+    font-size: 40px;
   }
 
   .contact form {
     flex-direction: column;
   }
+
 }
- */
+
+
+@media (max-width: 600px) {
+
+  .projects-box .projects-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .skills-box {
+    width: 300px;
+    height: auto;
+  }
+
+  @media (max-width:460px) {
+    .footer ul.list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+}

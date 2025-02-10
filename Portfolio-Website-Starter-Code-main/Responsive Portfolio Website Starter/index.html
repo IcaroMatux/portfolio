@@ -1,316 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <a href="#home" class="logo">
-        <span>Icaro Matos </span>
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../Images/icons8-portfolio-ink-32.png">
+</head>
 
-      <i class="bx bxmenu" id="menu-icon">MENU</i>
-      <label for="menu-icon"></label>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">
+      <span>Icaro Matos </span>
+    </a>
 
-      <nav class="navbar">
-        <a href="#home">Início</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
-      </nav>
-
-      <button class="gradient-btn">Contate-me</button>
-    </header>
-
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Icaro Matos França</h1>
-        <h3><span>Desenvolvedor FrontEnd</span></h3>
-        <p>
-          Hello World, me chamo Ícaro, tenho 22 anos, nascido em Fortaleza - CE.
-          Atualmente sou um <span>Desenvolvedor FullStack</span> em formação
-          pelo Curso DevQuest. Sou apaixonado por <span>tecnologia</span>, jogos
-          e inovação. Além disso gosto de superar desafios e aprender
-          continuamente para agregar a comunidade de desenvolvedores como um
-          todo. Estou sempre disposto a melhorar minhas habilidades e me
-          especializar na área que tanto tenho paixão. Atualmente tenho estudado
-          linguagens da parte de FrontEnd, como <span>HTML</span>,<span>
-            CSS</span
-          >, <span>JavaScript</span> e <span>React</span>, porém pretendo
-          expandir meus conhecimentos para me tornar um périto na área de
-          <span>BackEnd</span>, me tornando assim um desenvolvedor
-          <span>Full Stack</span>. Além dos estudos, aprecio muito viagens,
-          jogos, principalmente de sobrevivência, séries e ciclismo.
-        </p>
-
-        <div class="social-icons">
-          <a href="#">
-            <i class="bx bxl-github"></i>
-          </a>
-
-          <a href="#">
-            <i class="bx bxl-linkedin-square"></i>
-          </a>
-
-          <a href="#">
-            <i class="bx bxl-instagram-alt"></i>
-          </a>
-
-          <a href="#">
-            <i class="bx bxl-whatsapp"></i>
-          </a>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-hamburguer">
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <i class="toggle"></i>
         </div>
+      </label>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="https://www.linkedin.com/in/devicaromatoss/" target="_blank">Contato</a></li>
+      </ul>
+    </nav>
 
-        <div class="btn-group">
-          <a href="#" class="btn">Hire</a>
-          <a href="#contact" class="btn">Contact</a>
-        </div>
-      </div>
+    <button class="gradient-btn"><a href="#contact">Contate-me</a></button>
+  </header>
 
-      <div class="home-img">
-        <img src="../Images/alucinei.png" alt="Icaro" />
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <h2 class="heading">Habilidades</h2>
-
-      <div class="skills-container">
-        <div class="skills-box">
-          <div class="skill-info">
-            <i class="bx bx-code"></i>
-            <h3>FrontEnd Developer</h3>
-            <p>
-              Um Desenvolvedor FrontEnd é responsável pela criação e
-              implementação da interface gráfica/visual de um site ou
-              aplicativo, com foco na experiência do usuário. Suas principais
-              atividades incluem a escrita de código HTML, CSS e JavaScript para
-              criar a estrutura, o layout e as interações da interface.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <div class="skill-info">
-            <i class="bx bxl-html5"></i>
-            <h3>HTML</h3>
-            <p>
-              O HTML é o componente básico da web, ele permite inserir o
-              conteúdo e estabelecer a estrutura básica de um website. Portanto,
-              ele serve para dar significado e organizar as informações de uma
-              página na web. Sem isso, o navegador não saberia exibir textos
-              como elementos ou carregar imagens e outros conteúdos.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <div class="skill-info">
-            <i class="bx bxl-css3"></i>
-            <h3>CSS</h3>
-            <p>
-              O CSS é usado para estilizar elementos escritos em uma linguagem
-              de marcação como o HTML. Ele separa o conteúdo da representação
-              visual do site, basicamente é a decoração da página. O CSS também
-              pode criar tabelas, usar variações de layouts, ajustar imagens e
-              assim por diante.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <div class="skill-info">
-            <i class="bx bxl-javascript"></i>
-            <h3>JavaScript</h3>
-            <p>
-              O JavaScript é uma linguagem de programação interpretada de alto
-              nível que permite implementar itens complexos, como controlar
-              multimídias, imagens animadas e conteúdos que se atualizam
-              dinamicamente. Ele se destaca por deixar páginas Web dinâmicas.
-            </p>
-          </div>
-        </div>
-
-        <div class="skills-box">
-          <div class="skill-info">
-            <i class="bx bxl-react"></i>
-            <h3>React</h3>
-            <p>
-              React é uma biblioteca JavaScript desenvolvida pelo Facebook,
-              usada para construir interfaces de usuário (UI) de forma eficiente
-              e escalável. Ela é amplamente adotada para criar aplicações web
-              modernas, interativas e responsivas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
-      <div class="projects-box">
-        <div class="projects-list">
-          <div class="projects-card">
-            <a href="https://icaromatux.github.io/Remake2/" target="_blank">
-              <video
-                autoplay
-                loop
-                muted
-                src="../Videos/projeto-1.mp4"
-                alt="Vídeo do projeto Resident Evil"
-              ></video>
-
-              <div class="info-project">
-                <p>Projeto de Card Pessoal Resident Evil 2 Remake</p>
-                <p>🔗 Ver no GitHub Pages</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="projects-card">
-            <a href="https://yankii4life.vercel.app/" target="_blank">
-              <video
-                autoplay
-                loop
-                muted
-                src="../Videos/projeto-2.mp4"
-                alt="Vídeo do projeto Yankiis"
-              ></video>
-
-              <div class="info-project">
-                <p>Projeto Pessoal Yankiis</p>
-                <p>🔗 Ver no GitHub Pages</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="projects-card">
-            <a href="https://icaromatux.github.io/Pokedex/" target="_blank">
-              <video
-                autoplay
-                loop
-                muted
-                src="../Videos/projeto-3.mp4"
-                alt="Vídeo do projeto Pokedéx"
-              ></video>
-
-              <div class="info-project">
-                <p>Projeto Pessoal Pokedéx</p>
-                <p>🔗 Ver no GitHub Pages</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="projects-card">
-            <a
-              href="https://icaromatux.github.io/Landing-Page/"
-              target="_blank"
-            >
-              <video
-                autoplay
-                loop
-                muted
-                src="../Videos/projeto-4.mp4"
-                alt="Vídeo do projeto Landing Page"
-              ></video>
-
-              <div class="info-project">
-                <p>Projeto Pessoal Landing Page</p>
-                <p>🔗 Ver no GitHub Pages</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="btn-container">
-          <div class="btn btn-projects">
-            <a
-              href="https://github.com/IcaroMatux"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-projects"
-              >Ver mais projetos</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <form action="#">
-        <div class="input-group">
-          <div class="input-box">
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="Email" />
-          </div>
-
-          <div class="input-box">
-            <input type="number" placeholder="Telefone" />
-            <input type="text" placeholder="Assunto" />
-          </div>
-        </div>
-
-        <div class="input-group-2">
-          <textarea
-            name=""
-            id=""
-            placeholder="Mensagem"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <input type="submit" value="Enviar Mensagem" class="btn" />
-        </div>
-      </form>
-    </section>
-
-    <footer class="footer">
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Icaro Matos França</h1>
+      <h3><span>Desenvolvedor</span> <span class="typing">BackEnd</span></h3>
+      <p>
+        Hello World, me chamo Ícaro, tenho 22 anos, nascido em Fortaleza - CE.
+        Atualmente sou um <span>Desenvolvedor FullStack</span> em formação
+        pelo Curso DevQuest. Sou apaixonado por <span>tecnologia</span>, jogos
+        e inovação. Além disso gosto de superar desafios e aprender
+        continuamente para agregar a comunidade de desenvolvedores como um
+        todo. Estou sempre disposto a melhorar minhas habilidades e me
+        especializar na área que tanto tenho paixão. Atualmente tenho estudado
+        linguagens da parte de FrontEnd, como <span>HTML</span>,<span>
+          CSS</span>, <span>JavaScript</span> e <span>React</span>, porém pretendo
+        expandir meus conhecimentos para me tornar um périto na área de
+        <span>BackEnd</span>, me tornando assim um desenvolvedor
+        <span>Full Stack</span>. Além dos estudos, aprecio muito viagens,
+        jogos, principalmente de sobrevivência, séries e ciclismo.
+      </p>
       <div class="social-icons">
-        <a href="https://github.com/IcaroMatux">
+        <a href="https://github.com/IcaroMatux" target="_blank">
           <i class="bx bxl-github"></i>
         </a>
 
-        <a href="https://www.linkedin.com/in/devicaromatoss/">
+        <a href="https://www.linkedin.com/in/devicaromatoss/" target="_blank">
           <i class="bx bxl-linkedin-square"></i>
         </a>
 
-        <a href="https://www.instagram.com/icaromatux/">
+        <a href="https://www.instagram.com/icaromatux/" target="_blank">
           <i class="bx bxl-instagram-alt"></i>
         </a>
 
-        <a href="https://wa.me/+5585992979704">
+        <a href="https://wa.me/+5585992979704" target="_blank">
           <i class="bx bxl-whatsapp"></i>
         </a>
       </div>
 
-      <ul class="list">
-        <li>
-          <a href="#home">Início</a>
-        </li>
+      <div class="btn-group">
+        <a href="#contact" class="btn">Contato</a>
+      </div>
+    </div>
 
-        <li>
-          <a href="#skills">Habilidades</a>
-        </li>
+    <div class="home-img">
+      <img src="../Images/alucinei.png" alt="Icaro" />
+    </div>
+  </section>
 
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
+  <section class="skills" id="skills">
+    <h2 class="heading">Habilidades</h2>
 
-        <li>
-          <a href="#contact">Contato</a>
-        </li>
-      </ul>
+    <div class="skills-container">
+      <div class="skills-box">
+        <div class="skill-info">
+          <i class="bx bx-code"></i>
+          <h3>FrontEnd Developer</h3>
+          <p>
+            Um Desenvolvedor FrontEnd é responsável pela criação e
+            implementação da interface gráfica/visual de um site ou
+            aplicativo, com foco na experiência do usuário. Suas principais
+            atividades incluem a escrita de código HTML, CSS e JavaScript para
+            criar a estrutura, o layout e as interações da interface.
+          </p>
+        </div>
+      </div>
 
-      <p class="copyright">Developed Icaro Matos</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <div class="skills-box">
+        <div class="skill-info">
+          <i class="bx bxl-html5"></i>
+          <h3>HTML</h3>
+          <p>
+            O HTML é o componente básico da web, ele permite inserir o
+            conteúdo e estabelecer a estrutura básica de um website. Portanto,
+            ele serve para dar significado e organizar as informações de uma
+            página na web. Sem isso, o navegador não saberia exibir textos
+            como elementos ou carregar imagens e outros conteúdos.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-box">
+        <div class="skill-info">
+          <i class="bx bxl-css3"></i>
+          <h3>CSS</h3>
+          <p>
+            O CSS é usado para estilizar elementos escritos em uma linguagem
+            de marcação como o HTML. Ele separa o conteúdo da representação
+            visual do site, basicamente é a decoração da página. O CSS também
+            pode criar tabelas, usar variações de layouts, ajustar imagens e
+            assim por diante.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-box">
+        <div class="skill-info">
+          <i class="bx bxl-javascript"></i>
+          <h3>JavaScript</h3>
+          <p>
+            O JavaScript é uma linguagem de programação interpretada de alto
+            nível que permite implementar itens complexos, como controlar
+            multimídias, imagens animadas e conteúdos que se atualizam
+            dinamicamente. Ele se destaca por deixar páginas Web dinâmicas.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-box">
+        <div class="skill-info">
+          <i class="bx bxl-react"></i>
+          <h3>React</h3>
+          <p>
+            React é uma biblioteca JavaScript desenvolvida pelo Facebook,
+            usada para construir interfaces de usuário (UI) de forma eficiente
+            e escalável. Ela é amplamente adotada para criar aplicações web
+            modernas, interativas e responsivas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="projects-box">
+      <div class="projects-list">
+        <div class="projects-card">
+          <a href="https://icaromatux.github.io/Remake2/" target="_blank">
+            <video autoplay loop muted src="../Videos/projeto-1.mp4" alt="Vídeo do projeto Resident Evil"></video>
+
+            <div class="info-project">
+              <p>Projeto de Card Pessoal Resident Evil 2 Remake</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projects-card">
+          <a href="https://yankii4life.vercel.app/" target="_blank">
+            <video autoplay loop muted src="../Videos/projeto-2.mp4" alt="Vídeo do projeto Yankiis"></video>
+
+            <div class="info-project">
+              <p>Projeto Pessoal Yankiis</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projects-card">
+          <a href="https://icaromatux.github.io/Pokedex/" target="_blank">
+            <video autoplay loop muted src="../Videos/projeto-3.mp4" alt="Vídeo do projeto Pokedéx"></video>
+
+            <div class="info-project">
+              <p>Projeto Pessoal Pokedéx</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projects-card">
+          <a href="https://icaromatux.github.io/Landing-Page/" target="_blank">
+            <video autoplay loop muted src="../Videos/projeto-4.mp4" alt="Vídeo do projeto Landing Page"></video>
+
+            <div class="info-project">
+              <p>Projeto Pessoal Landing Page</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="btn-container">
+        <div class="btn btn-projects">
+          <a href="https://github.com/IcaroMatux" target="_blank" rel="noopener noreferrer" class="btn-projects">Ver
+            mais projetos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contate<span>Me</span></h2>
+
+    <form action="#">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Nome" required />
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+
+        <div class="input-box">
+          <input type="number" id="number" placeholder="Telefone" />
+          <input type="text" id="subject" placeholder="Assunto" required />
+        </div>
+      </div>
+
+      <div class="input-group-2">
+        <textarea name="" id="message" placeholder="Mensagem" cols="30" rows="10"></textarea>
+        <input type="submit" onclick="sendMail()" value="Enviar Mensagem" class="btn" />
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/IcaroMatux" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/devicaromatoss/" target="blank">
+        <i class="bx bxl-linkedin-square"></i>
+      </a>
+
+      <a href="https://www.instagram.com/icaromatux/" target="blank">
+        <i class="bx bxl-instagram-alt"></i>
+      </a>
+
+      <a href="https://wa.me/+5585992979704" target="blank">
+        <i class="bx bxl-whatsapp"></i>
+      </a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#home">Início</a>
+      </li>
+
+      <li>
+        <a href="#skills">Habilidades</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projetos</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contato</a>
+      </li>
+    </ul>
+
+    <p class="copyright">Developed Icaro Matos</p>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "nO2-tYrqILlFDZRDI",
+      });
+    })();
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
