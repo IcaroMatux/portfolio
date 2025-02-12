@@ -53,7 +53,7 @@ Usei algumas pessoas como referências e vou deixar aqui para quem quiser seguir
 📎 Linkedin: https://www.linkedin.com/in/walassi-silva/
 📎 Portfólio: https://walassi-silva-portfolio.vercel.app/
  
-📞 Entre em contato comigo ---------------------------------------------------------------------------------------------
+📞 Entre em contato comigo -------------------------------------------------------------------------------------------
 
 Email: icaromatoss@hotmail.com
 Linkedin: https://www.linkedin.com/in/devicaromatoss/
