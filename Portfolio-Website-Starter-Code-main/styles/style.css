@@ -163,7 +163,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 15rem; 
 }
 
 .home-content {
@@ -268,8 +268,9 @@ section {
 
 /* ---------------------------------------------------------// Habilidades ---------------------------------------------- */
 .skills {
-  background-color: var(--second-bg-color);
+  /* background-image: url(../Images/background-1.jpg); */
   color: white;
+  background-size: cover;
 }
 
 .skills h2 {
@@ -336,7 +337,9 @@ section {
 /* -----------------------------------------------------// projects ----------------------------------------------------- */
 
 .projects {
-  background-color: var(--second-bg-color);
+  /* background-image: url(../Images/background-1.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .projects-box .projects-list {
