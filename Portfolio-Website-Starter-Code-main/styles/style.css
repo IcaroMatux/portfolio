@@ -618,3 +618,40 @@ a {
   }
 
 }
+
+#toast-notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 2000;
+}
+
+.toast {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast.success {
+  border-left: 8px solid #28a745; /* Verde para sucesso */
+  color: #155724;
+}
+.toast.error {
+  border-left: 8px solid var(--main-color); /* Vermelho para erro */
+  color: #721c24;
+}

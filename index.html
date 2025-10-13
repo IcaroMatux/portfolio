@@ -208,6 +208,30 @@
             </div>
           </a>
         </div>
+
+        <div class="projects-card">
+          <a href="" target="_blank">
+            <video autoplay loop muted src="./Portfolio-Website-Starter-Code-main/src/assets/videos/projeto-5.mp4"
+              alt="Vídeo do Projeto LumiAI"></video>
+
+            <div class="info-project">
+              <p>Projeto Pessoal LumiAI</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projects-card">
+          <a href="#" target="_blank">
+            <video autoplay loop muted src="./Portfolio-Website-Starter-Code-main/src/assets/videos/projeto-6.mp4"
+              alt="Vídeo do Projeto Skull Barber"></video>
+
+            <div class="info-project">
+              <p>Projeto Pessoal Old Skull Barber</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="btn-container">
         <div class="btn btn-projects">
@@ -221,7 +245,7 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contate<span>Me</span></h2>
 
-    <form action="#">
+    <form id="contact-form">
       <div class="input-group">
         <div class="input-box">
           <input type="text" id="name" placeholder="Nome" required />
@@ -235,8 +259,8 @@
       </div>
 
       <div class="input-group-2">
-        <textarea name="" id="message" placeholder="Mensagem" cols="30" rows="10"></textarea>
-        <input type="submit" onclick="sendMail()" value="Enviar Mensagem" class="btn" />
+        <textarea name="" id="message" placeholder="Mensagem" cols="30" rows="10" required></textarea>
+        <input type="submit" value="Enviar Mensagem" class="btn" />
       </div>
     </form>
   </section>
@@ -292,6 +316,8 @@
   </script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="./Portfolio-Website-Starter-Code-main/scripts/script.js"></script>
+
+  <div id="toast-notification"></div>
 </body>
 
 </html>
